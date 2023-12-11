@@ -1,0 +1,25 @@
+{
+  "name": "responsive-design",
+  "version": "1.0.0",
+  "description": "just a Responsive portfolio design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tushar-droid/responsive-design.git"
+  },
+  "author": "Tushar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tushar-droid/responsive-design/issues"
+  },
+  "homepage": "https://github.com/tushar-droid/responsive-design#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
