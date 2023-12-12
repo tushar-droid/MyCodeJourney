@@ -1,7 +1,10 @@
 @font-face {
     font-family: 'bebas';
     src: url('./assets/BebasNeue-Regular.ttf');
+    font-weight: 900;
+    font-style: bold;
 }
+
 
 
 
@@ -44,10 +47,15 @@
     transform: translateX(-30%);
     font-size: 6vw;
     width: 100%;
+    font-weight: 100;
 }
 
+.header-right h2{
+    color: #000500;
+}
 .header-right{
     background-color: white;
+    color: #8d9499;
     margin-top: 15%;
     font-size: 2.5vw;
     margin-left: calc(10rem + 32%);
@@ -64,4 +72,65 @@
     list-style: none;
     gap:4%;
     justify-content: flex-end;
+    color: #000500
+}
+
+.projects{
+    margin-top: 5%;
+    font-size: 2.5vw;
+    padding: 2% 5%;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 4%;
+    margin-top: 2%;
+    row-gap: 6.667%;
+}
+
+.project-card{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 65vh;
+    
+}
+
+.top{
+    height: 60%;
+    background-color: #593f62;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f2e8cf;
+    font-size: 3rem;
+}
+
+.details{    
+    padding:2%  10% ;
+    height: 40%;
+}
+
+.details-title{
+    display: flex;
+    font-weight: 100;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.details-text{
+    margin-top: 10%;
+    font-size:x-large;
+    color: #8d9499;
+}
+
+.icons-list{
+    flex: 1;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10%;
+}
+
+.icons-list > li{
+    line-height: 0;
 }
