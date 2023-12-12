@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'bebas';
+    src: url('./assets/BebasNeue-Regular.ttf');
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'bebas';
+}
+
+
+.header{
+    min-height: 100vh;
+    background: linear-gradient(170deg, #00b2ca 75%, white 25%);
+    
+}
+
+.header-left{
+    float: left;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+    /* background-color: black; */
+    width: 32%;
+    
+}
+
+.profile{
+    width: 100%;
+    min-width: 250px;
+    display: block;
+}
+
+.name{
+    color: white;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-30%);
+    font-size: 6vw;
+    width: 100%;
+}
+
+.header-right{
+    background-color: white;
+    margin-top: 15%;
+    font-size: 2.5vw;
+    margin-left: calc(10rem + 32%);
+    margin-right: 10rem;
+    padding: 5rem 2rem 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.icons-container{
+    margin-left: auto;
+    max-width: 50%;
+}
+.icons{
+    display: flex;
+    list-style: none;
+    gap:4%;
+    justify-content: flex-end;
+}
