@@ -3,9 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfoli</title>
+    <title>Portfolio</title>
+    <script src="bundle.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
   </head>
   <body>
-    <script src="bundle.js" defer></script>
+
+
+    <header class="header">
+      <div class="header-left">
+        <img src="../src/assets/profile.jpg" class="profile">
+        <h1 class="name">John Doe</h1>
+      </div>
+        &nbsp;                          <!--       To avoid Margin collapse            -->
+      <div class="header-right">
+        <h2>
+          About Me
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolor explicabo deleniti repellendus, maiores, provident dignissimos odio totam aliquam tempora blanditiis illo veniam voluptas at possimus doloremque neque, non optio?</p>
+        <div class="icons-container">
+          <ul class = "icons">
+            <li class="git-icon">
+              <i class="devicon-github-original colored"></i>
+            </li>
+            <li class="link-icon">
+              <i class="devicon-linkedin-plain"></i>
+            </li>
+            <li class="twitter-icon">
+              <i class="devicon-twitter-original"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+
+
   </body>
 </html>
