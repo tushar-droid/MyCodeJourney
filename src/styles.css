@@ -165,8 +165,6 @@ footer{
     flex: 4;
 }
 
-
-
 .footer-icons{
     display: flex;
     list-style: none;
@@ -186,3 +184,59 @@ footer{
     transform: translateY(30%);
     padding-right: 0.6rem;
 }
+
+@media only screen and (max-width: 1200px) {
+    .header-right{
+        margin-right: 5%;
+        margin-top: 12rem;
+        margin-left: 16rem;   
+        padding-top: 10%;
+    }
+
+    .header-left{
+        margin-right: 1rem;
+        margin-left: 5%;
+        width: 40%;
+    }
+
+    .name{
+        top:3rem;
+        left: 120%;    
+    }
+
+    .projects-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 0.8fr));
+        grid-gap: 2em;
+        margin-top: 2%;
+        justify-content: center;        
+    }
+
+    .footer-right{
+        flex: 3;
+    }
+    
+    .footer-right > img{        
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .footer-left h2{
+        font-size: 6vw;
+    }
+
+    .footer-left{
+        font-size: 2vw;
+        margin-right: 10%;
+
+    }
+    .footer{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .footer-icons{
+        font-size: 4vw;
+        gap:2rem;
+    }
+  }
