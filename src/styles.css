@@ -240,3 +240,8 @@ footer{
         gap:2rem;
     }
   }
+
+  /* For mobile phones */
+  @media only screen and (max-width: 600px) {
+    
+  }
