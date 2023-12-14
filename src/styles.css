@@ -19,7 +19,6 @@
 .header{
     min-height: 100vh;
     background: linear-gradient(170deg, #00b2ca 75%, white 25%);
-    
 }
 
 .header-left{
@@ -105,6 +104,7 @@
     justify-content: center;
     color: #f2e8cf;
     font-size: 3rem;
+    text-align: center;
 }
 
 .details{    
@@ -243,5 +243,66 @@ footer{
 
   /* For mobile phones */
   @media only screen and (max-width: 600px) {
-    
+    .header{
+        padding: 2rem;
+        background: linear-gradient(160deg, #00b2ca 45%, white 10%);
+
+    }
+    .header-left{
+        float: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 70vh;
+    }
+    .profile{
+        height: 100%;
+        object-fit: cover;
+    }
+    .name{
+        all: unset;
+        color: white;
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-30%);
+        font-size: 4rem;
+        width: 100%;
+        font-weight: 100;
+    }
+    .header-right{
+        all: unset;
+        background-color: white;
+        color: #8d9499;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-right > h2{
+        text-align: center;
+    }  
+    .icons-container{
+        max-width: 100%;
+    }
+    .icons{
+        padding-top: 5%;
+        justify-content: center;
+        font-size: 2.5rem;
+        gap:6%;
+    }
+
+
+    .projects-title{
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .top{
+        font-size: 2.3rem;
+    }
+    .details-title{
+        padding-top: 5%;
+        font-size: 2rem;
+    }
   }
