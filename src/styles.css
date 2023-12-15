@@ -19,7 +19,6 @@
 .header{
     min-height: 100vh;
     background: linear-gradient(170deg, #0b3954 75%, white 25%);
-    overflow-x: hidden;
 }
 
 .header-left{
@@ -30,8 +29,23 @@
     position: relative;
     /* background-color: black; */
     width: 32%;
+    animation: header-img-anim 2s;
     
 }
+
+@keyframes header-img-anim {
+    from{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
 
 .profile{
     width: 100%;
@@ -40,7 +54,6 @@
 }
 
 .name{
-    
     position: absolute;
     bottom: 2%;
     left: 50%;
@@ -50,9 +63,22 @@
     font-weight: 100;
     color: #dec3be;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-
+    animation: name-animation 2s  ;
 
 }
+
+@keyframes name-animation {
+    from{
+        opacity: 0;
+        bottom:-8%;
+    }
+    to{
+        opacity: 1;
+        bottom: 2%;
+    }
+}
+
+
 
 .header-right h2{
     color: #000500;
@@ -61,12 +87,28 @@
     background-color: white;
     color: #8d9499;
     margin-top: 7%;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     margin-left: calc(10rem + 32%);
     margin-right: 10rem;
     padding: 5rem 2rem 1rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: aboutme-anim 2s;
 }
+
+@keyframes aboutme-anim {
+    from{
+        opacity: 0;
+        transform: translateY(40%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+
+
 .icons-container{
     margin-left: auto;
     max-width: 50%;
@@ -89,7 +131,6 @@
 .projects-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    
     grid-gap: 2em;
     margin-top: 2%;
     /* row-gap: 6.667%; */
@@ -203,12 +244,25 @@ footer{
         margin-right: 1rem;
         margin-left: 5%;
         width: 40%;
+        z-index: 3;
     }
 
     .name{
         top:3rem;
         left: 120%;    
     }
+
+    @keyframes name-animation {
+        from{
+            opacity: 0;
+            left:100%;
+        }
+        to{
+            opacity: 1;
+            left:120%;
+        }
+    }
+    
 
     .projects-container{
         display: grid;
@@ -251,8 +305,9 @@ footer{
   @media only screen and (max-width: 600px) {
     .header{
         padding: 2rem;
-        background: linear-gradient(160deg, #00b2ca 45%, white 10%);
-
+        background: linear-gradient(160deg, #0b3954 45%, white 10%);
+        overflow-x: hidden;
+        
     }
     .header-left{
         float: none;
@@ -276,6 +331,19 @@ footer{
         font-size: 4rem;
         width: 100%;
         font-weight: 100;
+        animation: name-animation 2s  ;
+
+    }
+
+    @keyframes name-animation {
+        from{
+            opacity: 0;
+            bottom:-8%;
+        }
+        to{
+            opacity: 1;
+            bottom: 2%;
+        }
     }
     .header-right{
         all: unset;
