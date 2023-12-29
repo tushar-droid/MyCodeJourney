@@ -16,7 +16,7 @@
 }
 
 
-.header{
+.header {
     min-height: 100vh;
     background: linear-gradient(170deg, #0b3954 75%, white 25%);
 }
@@ -30,7 +30,7 @@
     /* background-color: black; */
     width: 32%;
     animation: header-img-anim 2s;
-    
+
 }
 
 @keyframes header-img-anim {
@@ -38,17 +38,24 @@
         opacity: 0;
         transform: translateY(-10%);
     }
+    20%{
+        opacity: 1;
+    }
     to{
         opacity: 1;
         transform: translateY(0);
     }
 
 }
-.battleship-image-container{
+/* .battleship-image-container{
+    height: 90%;
+    width: auto;
+} */
+
+.top > img{
     height: 90%;
     width: auto;
 }
-
 
 
 .profile{
@@ -76,6 +83,7 @@
         opacity: 0;
         bottom:-8%;
     }
+
     to{
         opacity: 1;
         bottom: 2%;
@@ -104,11 +112,14 @@
         opacity: 0;
         transform: translateY(40%);
     }
+    20%{
+        opacity: 1;
+    }
     to{
         opacity: 1;
         transform: translateY(0);
     }
-    
+
 }
 
 
@@ -152,7 +163,7 @@
 
 .top{
     height: 60%;
-    background-color: #593f62;
+    background-color: #0b3954;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,7 +172,7 @@
     text-align: center;
 }
 
-.details{    
+.details{
     padding:2%  10% ;
     height: 40%;
 }
@@ -189,6 +200,14 @@
 
 .icons-list > li{
     line-height: 0;
+    transition: all 0.3s ease-in-out;
+}
+.icons-list > li:hover{
+    transform: scale(1.2);
+}
+
+.icons-list  a {
+    text-decoration: none;
 }
 
 
@@ -231,7 +250,7 @@ footer{
 }
 
 .footer-connect-icons{
-    fill: #f2e8cf; 
+    fill: #f2e8cf;
     height:2.5rem;
     transform: translateY(30%);
     padding-right: 0.6rem;
@@ -244,7 +263,7 @@ footer{
     .header-right{
         margin-right: 5%;
         margin-top: 12rem;
-        margin-left: 16rem;   
+        margin-left: 16rem;
         padding-top: 10%;
     }
 
@@ -257,7 +276,7 @@ footer{
 
     .name{
         top:3rem;
-        left: 120%;    
+        left: 120%;
     }
 
     @keyframes name-animation {
@@ -270,21 +289,21 @@ footer{
             left:120%;
         }
     }
-    
+
 
     .projects-container{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 0.8fr));
         grid-gap: 2em;
         margin-top: 2%;
-        justify-content: center;        
+        justify-content: center;
     }
 
     .footer-right{
         flex: 3;
     }
-    
-    .footer-right > img{        
+
+    .footer-right > img{
         height: 100%;
         object-fit: cover;
     }
@@ -315,7 +334,7 @@ footer{
         padding: 2rem;
         background: linear-gradient(160deg, #0b3954 45%, white 10%);
         overflow-x: hidden;
-        
+
     }
     .header-left{
         float: none;
@@ -364,7 +383,7 @@ footer{
 
     .header-right > h2{
         text-align: center;
-    }  
+    }
     .icons-container{
         max-width: 100%;
     }
@@ -393,7 +412,7 @@ footer{
         padding-left: 5%;
         padding-right: 5%;
     }
- 
+
     .footer-left{
         font-size: 1.5rem;
         margin-right: 0;
