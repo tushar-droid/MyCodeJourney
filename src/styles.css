@@ -60,6 +60,14 @@ body:not(.loaded) .header-right{
     width: auto;
 }
 
+.icons > li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* .icons > li a:hover{
+    
+} */
 
 .profile{
     width: 100%;
