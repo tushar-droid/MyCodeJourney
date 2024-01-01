@@ -13,13 +13,14 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(jpeg|jpg|png|svg|gif)$/i,
+        test: /\.(jpeg|jpg|png|svg|gif|pdf)$/i,
         type: 'asset/resource',
       },
       {
         test: /\.(woff|woff2|ttf|eot|otf)$/i,
         type: 'asset/resource',
       },
+
     ],
   },
 };
