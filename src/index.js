@@ -35,3 +35,9 @@ cards.forEach((card) => {
     window.open(link, '_blank');
   });
 });
+
+window.onload = () => {
+  document.querySelector('.loader').style.display = 'none';
+  document.body.classList.add('loaded');
+  document.querySelector('.content').style.display = 'block';
+};
