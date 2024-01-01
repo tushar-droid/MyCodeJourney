@@ -1,6 +1,6 @@
 import './styles.css';
 import profileImage from './assets/profile.jpg';
-import footerImage from './assets/footer.jpg';
+
 import battleShipImage from './assets/battleship.png';
 import weatherImage from './assets/weather-forecast.png';
 import listImage from './assets/list.png';
@@ -9,7 +9,6 @@ import topImage from './assets/top.png';
 import fccImage from './assets/fcc.png';
 
 const profileImgContainer = document.querySelector('.profile');
-const footerImgContainer = document.querySelector('.footer-img');
 const battleImageContainer = document.querySelector('.battleship-image-container');
 const weatherImageContainer = document.querySelector('.weather-image-container');
 const todoListImageContainer = document.querySelector('.todoList-image-container');
@@ -19,7 +18,7 @@ const fccImageContainer = document.querySelector('.fcc-image-container');
 
 battleImageContainer.src = battleShipImage;
 profileImgContainer.src = profileImage;
-footerImgContainer.src = footerImage;
+
 weatherImageContainer.src = weatherImage;
 todoListImageContainer.src = listImage;
 dashImageContainer.src = dashImage;
