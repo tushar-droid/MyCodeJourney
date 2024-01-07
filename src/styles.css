@@ -536,3 +536,11 @@ footer{
         padding-bottom: 10%;
     }
   }
+
+  @media not all and (min-resolution:.001dpcm) {
+        .resume-icon > img {
+            max-width: 2.5rem !important;
+            height: auto   !important;
+        
+    }
+}
