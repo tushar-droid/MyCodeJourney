@@ -9,6 +9,7 @@ import topImage from './assets/top.png';
 import fccImage from './assets/fcc.png';
 import headerResumeImage from './assets/header-resume.png';
 import footerResumeImage from './assets/footer-resume.png';
+import CVImage from './assets/cv.png';
 
 const profileImgContainer = document.querySelector('.profile');
 const battleImageContainer = document.querySelector('.battleship-image-container');
@@ -19,7 +20,8 @@ const topImageContainer = document.querySelector('.top-image-container');
 const fccImageContainer = document.querySelector('.fcc-image-container');
 const headerResumeContainer = document.querySelector('.header-resume-container');
 const footerResumeContainer = document.querySelector('.footer-resume-container');
-
+const cvImageContainer = document.querySelector('.cvbuilder-image-container');
+cvImageContainer.src = CVImage;
 battleImageContainer.src = battleShipImage;
 profileImgContainer.src = profileImage;
 weatherImageContainer.src = weatherImage;
