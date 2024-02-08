@@ -10,6 +10,8 @@ import fccImage from './assets/fcc.png';
 import headerResumeImage from './assets/header-resume.png';
 import footerResumeImage from './assets/footer-resume.png';
 import CVImage from './assets/cv.png';
+import gameSphereImage from './assets/gamesphere.png';
+import memorygameImage from './assets/memory-game.png';
 
 const profileImgContainer = document.querySelector('.profile');
 const battleImageContainer = document.querySelector('.battleship-image-container');
@@ -21,6 +23,9 @@ const fccImageContainer = document.querySelector('.fcc-image-container');
 const headerResumeContainer = document.querySelector('.header-resume-container');
 const footerResumeContainer = document.querySelector('.footer-resume-container');
 const cvImageContainer = document.querySelector('.cvbuilder-image-container');
+const gamesphereImageContainer = document.querySelector('.gamesphere-image-container');
+const memorygameImageContainer = document.querySelector('.memorygame-image-container');
+
 cvImageContainer.src = CVImage;
 battleImageContainer.src = battleShipImage;
 profileImgContainer.src = profileImage;
@@ -31,6 +36,8 @@ topImageContainer.src = topImage;
 fccImageContainer.src = fccImage;
 headerResumeContainer.src = headerResumeImage;
 footerResumeContainer.src = footerResumeImage;
+gamesphereImageContainer.src = gameSphereImage;
+memorygameImageContainer.src = memorygameImage;
 
 const cards = document.querySelectorAll('.project-card');
 
